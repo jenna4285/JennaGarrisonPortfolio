@@ -5,15 +5,38 @@
     margin: 0    
 }
 
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
 /* properties of header container */
 .headcontainer {
-    height: 100px;
-    background-color: rgb(128, 128, 128);;
+    height: 75px;
+    background-color: rgb(51, 49, 49);
     padding: 10px 10px 10px 0px;
+    display: flex;
+}
+
+.headcontainer .headername, .headcontainer nav {
+    flex: 1; 
+}
+
+.headcontainer nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex: 1 1 auto;
+}
+
+.headcontainer nav a {
+    color: rgb(44, 109, 109);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    display: block;
+    border-bottom: 5px solid rgb(44, 109, 109);
 }
 
 /* Style Name in Header */
@@ -21,55 +44,27 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: x-large;
-    height: 75%;
-    margin: 0px 25px 10px 0;
-    padding: 10px;
+}
+
+.headername h1 {
+    display: inline;
     background-color: rgb(44, 109, 109);
     color: rgb(36, 12, 82);
-    display: flex;
-    justify-self: flex-start;
-    align-content: center;
-    flex: 1 1 auto;
+    font-size: 2rem;
+    padding-left: 40px;
 }
 
 /* Style Links in Header */
 .headlink {
     display: flex;
     justify-content: flex-end;
-    
+    align-content: space-between;
 }
 
-.headlink .aboutme {
-   width: 100px;
-   height: 20px;
-   margin: 20px;
-   /* background-color: white; */
-   flex: 1 1 auto;
+.headlink li {
+    display: block;
+    justify-content: center;
 }
-
-.headlink .work {
-    width: 100px;
-    height: 20px;
-    margin: 20px;
-    /* background-color: white; */
-    flex: 1 1 auto; 
- }
-
- .headlink .contactme {
-    width: 100px;
-    height: 20px;
-    margin: 20px;
-    /* background-color: white; */
-    flex: 1 1 auto;
- }
-
- .headlink .resume {
-    width: 100px;
-    height: 20px;
-    margin: 20px;
-    /* background-color: white; */
-    flex: 1 1 auto; 
- }
 
  /* style banner */
  .banner {
@@ -80,7 +75,7 @@
 
  .banner img {
      width:100%;
-     height: 100px;
+     height: 150px;
  }
 
  .banner .bannertext {
@@ -94,47 +89,55 @@
  }
 
  /* Style Content Containers */
-content {
+.content {
+    border: 2px solid purple;
+    padding: 10px 10px 10px 50px;
     display: flex;
     flex-flow: column wrap ;
+    align-items: flex-end;
 }
 
  h2 {
-     margin: 10px 10px 10px 75px;  
-     padding: 10px; 
+     border: 2px solid red; 
+     width: 25vw;
      font-family: sans-serif;
      font-weight: bold;
      color: rgb(36, 12, 82);
+     ;
  }
 
  p {
-     padding: 20px;
+     border: 2px dashed red; 
+     padding: 10px;
      font-family: sans-serif;
      justify-content: flex-end;
  }
 
  .sectionabout {
-     height: 150px; 
+     border: 2px dashed purple; 
      display: flex ;
      align-content: space-around;
  }
 
- .sectionabout p {
-     justify-content: flex-end;
+  .sectionabout p {
+    border: 2px solid purple;
  }
 
  .sectionwork {
-     height: 200px;
+    border: 2px dashed purple; 
+    display: flex ;
+    align-content: space-around;
+}
+
+
+/* Style Footer/Contact Section */
+.footer {
+    border: 2px dashed purple;
      display: flex ;
      align-content: space-around;
 }
 
-.sectioncontact {
-     height: 50px;
-     display: flex ;
-     /* align-content:space-between; */
-}
-
-.sectioncontact ul {
-    align-items: space-between;
+.footer .info li {
+    /* display: block;
+    justify-content: center; */
 }
