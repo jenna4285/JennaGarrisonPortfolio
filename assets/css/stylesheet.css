@@ -1,0 +1,69 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0    
+}
+
+/* properties of header container */
+.headcontainer {
+    height: 200px;
+    background-color: rgb(128, 128, 128);;
+    padding: 10px 10px 10px 0px;
+    border: 20px solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Style Name in Header */
+.headername {
+    height: 75%;
+    margin: 0px 25px 10px 0;
+    padding: 10px;
+    background-color: aqua;
+    color: rgb(128, 128, 128);
+    display: flex;
+    justify-self: flex-start;
+    align-content: center;
+    flex: 1 1 auto;
+}
+
+/* Style Links in Header */
+.headlink {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.headlink .aboutme {
+   width: 100px;
+   height: 20px;
+   margin: 20px;
+   background-color: white;
+   flex: 1 1 auto;
+}
+
+.headlink .work {
+    width: 100px;
+    height: 20px;
+    margin: 20px;
+    background-color: white;
+    flex: 1 1 auto; 
+ }
+
+ .headlink .contactme {
+    width: 100px;
+    height: 20px;
+    margin: 20px;
+    background-color: white;
+    flex: 1 1 auto;
+ }
+
+ .headlink .resume {
+    width: 100px;
+    height: 20px;
+    margin: 20px;
+    background-color: white;
+    flex: 1 1 auto; 
+ }
