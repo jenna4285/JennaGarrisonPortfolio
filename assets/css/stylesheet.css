@@ -18,6 +18,7 @@ body {
     background-color: rgb(51, 49, 49);
     padding: 10px 10px 10px 0px;
     display: flex;
+    justify-content: space-between;
 }
 
 .headcontainer .headername, .headcontainer nav {
@@ -118,7 +119,7 @@ body {
  }
 
  p {
-     padding: 10px;
+     /* padding: 10px; */
      margin: 10px;
      font-family: sans-serif;
      font-size: 1rem;
@@ -156,12 +157,12 @@ body {
     border-left: 5px solid rgb(36, 12, 82);
 }
 
-.worktext1{
+h3 {
     background-color: rgb(44, 109, 109);
     color: white;
-    display: block;
-    position: absolute;
-    margin: -80px -10px; 
+    display: block; 
+    /* position: absolute; */
+    margin: 0;
     padding: 15px 5px 15px 55px;
 }
 
@@ -173,13 +174,11 @@ body {
     padding-left: 5px;
 } */
 
-.workimages div {
+.workimages div, h6 {
     border: 10px solid rgb(44, 109, 109);
     background-color: rgb(44, 109, 109);
     color: white;
     margin: 10px;
-   
-    
 }
 
 .workimages section {
@@ -200,7 +199,7 @@ body {
     width: 50%;
 }
 
-section .worktext  {
+section .worktext h6 {
     background-color: rgb(44, 109, 109);
     color: white;
     display: block;
@@ -242,12 +241,51 @@ section .worktext  {
 
 /* responsive styling*/
 
-@media screen and (max-width: 770){
-    header, section {
-        flex-direction: column;
+@media only screen and (max-width: 794px) {
+    .headcontainer{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    margin: 0
+    }
+    .headlink nav {
+        padding-bottom: 20px;
     }
 
-    h1, .headlink .nav {
-        text-size-adjust: 50%;
+    .worktext1 {
+        display: inline;
+        position: relative;
+        margin: 0px; 
+        padding: 0px;
+        font-size: smaller;
     }
-}
+
+    section .worktext {
+        display: block;
+        position: relative;
+        margin: 0px; 
+        padding: 0px;
+        font-size: xx-small;
+    }
+
+    .workimages div {
+        border: 1px solid purple;
+    }
+
+    .workimages section {
+        border: 1px solid purple; 
+    }
+
+    h2 {
+        margin-right: 50px;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .info li {
+        font-size: small;
+    }
+} 
