@@ -150,35 +150,63 @@ body {
     max-width: 100vw;
 }
 
-.workimages ul {
+.workimages {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 5px solid rgb(36, 12, 82);
+}
+
+.worktext1{
+    background-color: rgb(44, 109, 109);
+    color: white;
+    display: block;
+    position: absolute;
+    margin: -80px -10px; 
+    padding: 15px 5px 15px 55px;
+}
+
+/* .workimages ul {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     border-left: 5px solid rgb(36, 12, 82);
     padding-left: 5px;
+} */
+
+.workimages div {
+    border: 10px solid rgb(44, 109, 109);
+    background-color: rgb(44, 109, 109);
+    color: white;
+    margin: 10px;
+   
+    
 }
 
-.workimages li img{
-    /* width: 25vw; */
+.workimages section {
     border: 10px solid  rgb(44, 109, 109);
+    display: inline;
     margin: 10px;
+    margin-left: 15px;
+    width: 45%;
+    justify-content: space-evenly;
+    
 }
 
 .work1 {
-    width: 50%;
+    width: 100%;
 }
 
 .work {
-    width: 25%;
+    width: 50%;
 }
 
-.workimages li div{
+section .worktext  {
     background-color: rgb(44, 109, 109);
     color: white;
     display: block;
     position: absolute;
-    margin: -90px 10px; 
-    padding: 5px 40px 5px 10px;
+    margin: -70px -10px; 
+    padding: 5px 0px 5px 40px;
 }
 /* Style Footer/Contact Section */
 .footer {
