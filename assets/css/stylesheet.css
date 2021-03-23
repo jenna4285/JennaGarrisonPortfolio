@@ -258,6 +258,9 @@ section .worktext h6 {
         margin: 0px; 
         padding: 0px;
         font-size: smaller;
+        border: none;
+        background-color: white;
+        color: black
     }
 
     section .worktext {
@@ -266,18 +269,27 @@ section .worktext h6 {
         margin: 0px; 
         padding: 0px;
         font-size: xx-small;
+        color: black;
+        background-color: white;
     }
 
     .workimages div {
-        border: 1px solid purple;
+        border: none;
+        background-color: white;
     }
 
     .workimages section {
-        border: 1px solid purple; 
+        border: none; 
+        background-color: white;
     }
 
     h2 {
         margin-right: 50px;
+    }
+
+    h6 {
+        border: none;
+        background-color: white;
     }
 
     .footer {
@@ -286,6 +298,8 @@ section .worktext h6 {
     }
 
     .info li {
+        padding: 0px;
+        margin: 0;
         font-size: small;
     }
 } 
