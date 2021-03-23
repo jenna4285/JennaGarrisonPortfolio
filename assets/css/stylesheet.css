@@ -14,7 +14,7 @@ body {
 
 /* properties of header container */
 .headcontainer {
-    height: 75px;
+    height: 100px;
     background-color: rgb(51, 49, 49);
     padding: 10px 10px 10px 0px;
     display: flex;
@@ -26,6 +26,7 @@ body {
 
 .headcontainer nav {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: flex-end;
     align-items: center;
 }
@@ -33,7 +34,7 @@ body {
 .headcontainer nav a {
     color: rgb(44, 109, 109);
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     padding: 5px 10px;
@@ -61,7 +62,7 @@ body {
 .headlink {
     display: flex;
     justify-content: flex-end;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .headlink li {
@@ -132,6 +133,11 @@ body {
     margin-bottom: 10px;
  }
 
+ .sectionabout h2 {
+     /* background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQHkx7ULosvPcA/profile-displayphoto-shrink_800_800/0/1548190377886?e=1622073600&v=beta&t=61q09suOU_3gpzXO4l64AzFSZZAzDJ1P-1G4hUNFkgI); */
+     ;
+ }
+
  
  .sectionabout { 
      display: flex ;
@@ -153,9 +159,17 @@ body {
 }
 
 .workimages li img{
-    width: 25vw;
+    /* width: 25vw; */
     border: 10px solid  rgb(44, 109, 109);
     margin: 10px;
+}
+
+.work1 {
+    width: 50%;
+}
+
+.work {
+    width: 25%;
 }
 
 .workimages li div{
@@ -166,8 +180,6 @@ body {
     margin: -90px 10px; 
     padding: 5px 40px 5px 10px;
 }
-
-
 /* Style Footer/Contact Section */
 .footer {
     padding: 0px 50px 10px 50px;
@@ -199,3 +211,15 @@ body {
     padding: 5px 10px 0px 10px;
     margin: 20px;    
 }    
+
+/* responsive styling*/
+
+@media screen and (max-width: 770){
+    header, section {
+        flex-direction: column;
+    }
+
+    h1, .headlink .nav {
+        text-size-adjust: 50%;
+    }
+}
