@@ -225,11 +225,12 @@ section .worktext h6 {
     .headcontainer{
     flex-direction: column;
     justify-content: space-between;
-    height: 0vh;
+    height: 30vh;
     margin: 0
     }
     .headlink nav {
         padding-bottom: 20px;
+        border-bottom: 0;
     }
 
     .worktext1 {
