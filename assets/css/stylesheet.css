@@ -137,12 +137,13 @@ body {
  .sectionwork {
     display: flex ;
     align-content: space-around;
-    max-width: 60%;
+    
 }
 
 .workimages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     border-left: 5px solid rgb(36, 12, 82);
 }
 
@@ -152,13 +153,19 @@ body {
     /* padding: 15px 5px 15px 55px; */
 
 
-.workimages div, h6 {
-    border: 5px solid rgb(44, 109, 109);
-    background-color: rgb(44, 109, 109);
+.workimages div {
+    border: 10px solid rgb(44, 109, 109);
+    /* background-color: rgb(44, 109, 109); */
     color: white;
     margin: 10px;
 }
 
+, h6 {
+    border: 5px solid rgb(44, 109, 109);
+    /* background-color: rgb(44, 109, 109); */
+    color: white;
+    margin: 10px;
+}
 .workimages section {
     border: 10px solid  rgb(44, 109, 109);
     display: inline;
@@ -179,9 +186,26 @@ body {
 
 /* Styling Captions for Images */
 
-section .worktext h6 {
+.bigimagecaption {
+    position: relative;
+    bottom: 55px;
+    left: -10px;
+    padding-left: 10px;
     background-color: rgb(44, 109, 109);
     color: white;
+}
+
+.imgcaption {
+    position: relative;
+    bottom: 20px;
+    left: -10px;
+    padding-left: 10px;
+    background-color: rgb(44, 109, 109);
+    color: white;
+}
+
+section .worktext h6 {
+    
     display: block;
     position: absolute;
     margin: -70px -10px; 
